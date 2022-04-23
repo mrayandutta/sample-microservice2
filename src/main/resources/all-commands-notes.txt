@@ -1,0 +1,12 @@
+docker --version
+docker container ls --all
+Stop all Docker Containers
+docker kill $(docker ps -q)
+Remove all docker containers
+docker rm $(docker ps -a -q)
+Remove all images
+docker rmi $(docker images -a -q)
+
+
+http://localhost:8000/microservice1/name=123
+http://localhost:8100/microservice2/from/EUR/to/INR/quantity/89
